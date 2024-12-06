@@ -1,0 +1,12 @@
+.card{
+    margin: 0px 20px;
+    border: none;
+    box-shadow: 0.5px 0.5px 5px #dfdfdf;
+    text-align: center;
+}
+.avinash{
+    background-color: orange !important;
+    max-width: 60%;
+    margin: 5% 20%;
+    border-radius: 5px;
+}
