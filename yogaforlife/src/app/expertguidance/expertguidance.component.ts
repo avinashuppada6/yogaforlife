@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ExpertguidancecomponentService } from '../services/expertguidancecomponent.service';
+import { Expertguidancecomponent } from '../models/expertguidancecomponent';
 
 @Component({
   selector: 'app-expertguidance',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./expertguidance.component.css']
 })
 export class ExpertguidanceComponent {
-
+  details :Expertguidancecomponent[]=[];
+   constructor(private service:ExpertguidancecomponentService){}
+   ngOnInit():void{
+    this.service.onsubmit().subscribe(data=>this.details=data);
+   }
 }
